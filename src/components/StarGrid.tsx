@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 // src/components/StarGrid.tsx
 
 export default function StarGrid() {

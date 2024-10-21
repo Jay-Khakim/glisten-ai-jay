@@ -32,13 +32,13 @@ const Showcase = ({ slice }: ShowcaseProps): JSX.Element => {
         field={slice.primary.heading}
         components={{
           heading2: ({ children }) => (
-            <h2 className="-text-5xl text-balance text-center font-medium md:text-7xl">
+            <h2 className="text-balance text-center text-5xl font-medium md:text-7xl">
               {children}
             </h2>
           ),
         }}
       />
-      <div className="mt-16 grid items-center rounded-xl border border-blue-50/20 bg-gradient-to-b from-slate-50/15 to-slate-50/5 px-8 py-8 backdrop-blur-sm lg:grid-cols-3 lg:py-12">
+      <div className="mt-16 grid items-center gap-8 rounded-xl border border-blue-50/20 bg-gradient-to-b from-slate-50/15 to-slate-50/5 px-8 py-8 backdrop-blur-sm lg:grid-cols-3 lg:gap-0 lg:py-12">
         <div className="">
           <div className="w-fit rounded-lg bg-blue-500/35 p-4 text-3xl">
             <>{slice.primary.icon && icons[slice.primary.icon]}</>
