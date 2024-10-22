@@ -63,7 +63,7 @@ const Integrations = ({ slice }: IntegrationsProps): JSX.Element => {
 
         <div className="mt-20 flex flex-col items-center md:flex-row">
           {slice.primary.icons.map((item, index) => (
-            <React.Fragment>
+            <React.Fragment key={index}>
               {index === Math.floor(slice.primary.icons.length / 2) && (
                 <>
                   <StylizedLogoMark />
@@ -75,6 +75,7 @@ const Integrations = ({ slice }: IntegrationsProps): JSX.Element => {
               </div>
               {index !== slice.primary.icons.length - 1 && (
                 <div
+                  key={`line-${index}`}
                   className={clsx(
                     "signal-line",
                     index >= Math.floor(slice.primary.icons.length / 2)
